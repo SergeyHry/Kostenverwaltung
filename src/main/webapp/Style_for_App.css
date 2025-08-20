@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* ===== Globales Layout ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdf7; /* sehr helles gelbliches Weiß */
+    margin: 40;
+    padding: 20;
+    color: #333;
+    width: 100%}
+.ober {
+	 font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    color:  #388e3c;
+    width: 100%;
+    height: 40px;
+}
+#logout{
+	display: flex;
+	margin-left: 60px;
+    padding: 10px;
+    font-size: 30px;
+
+	}
+
+h2 {
+    color: #2e7d32; /* dunkles Grün */
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #388e3c;
+}
+
+/* ===== Header mit Logout ===== */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header button {
+    background-color: #ffeb3b; /* gelb */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.header button:hover {
+    background-color: #fdd835; /* dunkleres Gelb */
+}
+
+/* ===== Container Layout ===== */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Container {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    width: 80%;
+}
+
+/* ===== Tabellen ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fbe7; /* ganz leichtes Gelb-Grün */
+}
+
+table tr:hover {
+    background-color: #e8f5e9; /* leichtes Grün */
+}
+
+/* ===== Buttons allgemein ===== */
+button, input[type="submit"] {
+    background-color: #4caf50; /* grün */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #388e3c; /* dunkleres grün */
+}
+
+/* ===== Inputs & Selects ===== */
+input[type="text"], input[type="number"], select {
+    padding: 6px;
+    margin: 5px 0 10px 0;
+    width: 100%;
+    border: 1px solid #cddc39; /* helles Gelbgrün */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+.Filter{
+	align-items: left;
+
+}
+/* ===== Saldo Kreis ===== */
+.Saldo_Container {
+    display: flex;
+    justify-content: center;   /* in der Mitte horizontal */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.Saldo_Circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: solid;
+  	border-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.Saldo_Circle h1 {
+    margin: 0;
+    font-size: 50px;
+    color: green;
+}
+
+.Saldo_Circle h2 {
+    margin: 5px 0 0 0;
+    font-size: 40px;
+}
